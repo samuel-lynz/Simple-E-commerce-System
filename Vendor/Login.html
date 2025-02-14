@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign/Login</title>
+    <link rel="stylesheet" href="../../Asset/css/Login.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="../../Asset/Images/pngwing.com (3).png" alt="Apple Logo">
+        </a>
+    </header>
+
+    <h1>Apple Store Connect</h1>
+
+    <form action="#" id="loginForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="Username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="Password" required>
+        <input type="submit" value="Login" />
+    </form>
+
+    <p id="message"></p>
+    
+    <footer class="footer-end">
+        <div>
+            <p>&copy; <span id="current-year"></span> CyberBoost. All Rights Reserved.</p>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+        </div>
+    </footer>
+    
+
+    <script>
+         document.getElementById("loginForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent form from submitting
+    
+                // Get input values
+                let username = document.getElementById("username").value;
+                let password = document.getElementById("password").value;
+    
+                // Check credentials
+                if (username === "Samuel" && password === "1234") {
+                    document.getElementById("message").innerText = "Login Successful!";
+                    document.getElementById("message").style.color = "green";
+                    alert("Login successful✅");
+                    // Redirect to another page (optional)
+                    window.location.href = "index.html";
+                } else {
+                    document.getElementById("message").innerText = "Invalid Username or Password!";
+                    document.getElementById("message").style.color = "red";
+                }
+            });
+    </script>
+</body>
+</html>

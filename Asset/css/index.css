@@ -1,0 +1,353 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url("../../Asset/Images/avator.jpg");
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding: 30px ;  
+    color: white; 
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+/* Apple logo */
+
+.logo img{
+    height: 63px;
+    background-color:  rgb(19, 19, 19) ;
+    width: 63px;
+    position: fixed;
+    margin-top: -20px;
+    left: 0;
+}
+
+
+/* Navigation */
+
+.main-header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(19, 19, 19) ;
+    background-attachment: local;
+    justify-content: space-between;
+
+}
+.nav-links{
+    display: flex;
+    gap: 50px;
+    margin-right: 30px;
+}
+.nav-links li{
+    list-style: none;
+    align-items: center;
+    
+}
+.nav-links li a{
+   display: flex;
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: bold;
+   justify-content: space-between;
+   color: white;
+}
+.nav-links li a:link{
+    text-decoration: none;
+    color: rgb(241, 81, 6);
+    
+ }
+
+ .nav-links li a:visited{
+    text-decoration: none;
+
+ }
+
+ .nav-links li a:hover{
+    text-decoration: none;
+    color: rgb(255, 64, 0);
+ }
+ 
+ .nav-links li a:active{
+    text-decoration: none;
+    color:purple;
+}
+
+/*First-section */
+
+   
+.hero-section {
+    display: flex;
+    background: radial-gradient(circle, #1a0e06, #000);
+    justify-content: center;
+    align-items: center;
+    height: 100% 
+    
+} 
+
+.hero {
+    text-align: center;
+    color: white;
+    bottom: 0;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 100px;
+    
+}
+
+.buttons, .buttons2 {
+    margin-top: 5px;
+    bottom: 0;
+}
+
+.btn{
+
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.learn, .learn2 {
+    background: #007aff;
+    color: white;
+}
+
+.buy-btn{
+    background-color:black;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color:white ;
+    font-weight: bold;
+    height: 39px;
+    width: 70px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+.buy-btn:active{
+    opacity: 0.7;}
+
+.learn:hover {
+    background: #005ecb;
+}
+
+.buy-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Glowing "PRO" Text*/
+.glow-text {
+    display: flex;
+    font-size: 20rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    margin-left: 35%;
+    transform: translateX(-50%);
+    margin-top: 5%;
+    filter: blur(4px);
+    text-shadow: 0px 0px 30px rgba(255, 165, 0, 0.8);
+}
+
+/* iPhone Image */
+
+.iphone {
+    display: flex;
+    margin-bottom: 0%;
+    margin-top: -320px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 390px; 
+}
+  
+/* Second-Section */
+
+.sent{
+    font-size: 40px;
+    text-align: center;
+    margin: 7px;
+    padding: 50px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.Second-Section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.second-phone{
+    border: white;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    background: radial-gradient(circle, #1a0e06, #000);
+}
+.title2{
+    padding-bottom: 15px;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+
+/* Third-Section */
+
+.Third-Section {
+    align-items: center;
+    margin-top: 8px;
+    height: 100%;
+    background: radial-gradient(circle, rgb(31, 31, 24), rgb(0, 0, 0));
+}
+.third-head{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+
+
+.phones-container{
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: center;
+    gap: 100px;
+
+
+}
+.phones {
+    margin-bottom: 40px ;
+    border: 2px solid #f4f4f4;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.phones img {
+    width: 200px;
+    height: auto;
+}
+
+.Lphone img{
+    width: 250px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+    /* Cart-section */
+
+#cart-section {
+    width: 300px;
+    background: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#cart-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    color: black;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background: white;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+#cart-total {
+    font-weight: bold;
+}
+
+#checkout-btn, #clear-cart-btn {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#clear-cart-btn {
+    background: #dc3545;
+}
+
+
+/* Fouth-Section Image slider */
+
+.Fourth-Section {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../Asset/Images/arrival3.jpg");
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.image-slider {
+    display: flex;
+    gap: 500px;
+    animation: slide 20s linear infinite;
+}
+
+.image-slider img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

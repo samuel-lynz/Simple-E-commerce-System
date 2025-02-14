@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+    <link rel="stylesheet" href="../../Asset/css/index.css">
+</head>
+<body>
+    <!-- Apple Logo -->
+    <header>
+        <div class="main-header">
+            <div class="logo">
+                <a href="index.html"><img src="../../Asset\Images\pngwing.com (3).png" alt="Apple Logo"></a>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#" id="cart-btn">Cart<span id="cart-count"></span></a></li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+
+    <main>
+        <!-- First Section -->
+        <section class="hero-section">
+
+            <div class="hero">
+                <h1 class="title">iPhone 16 Pro</h1>
+                <div class="buttons">
+                    <a href="#" class="btn learn">Learn more</a>
+                    <button class="buy-btn" data-name="Iphone 16 Pro" data-price="20500">Buy</button>
+                </div>
+                <div class="glow-text">PRO</div>
+                <img src="../../Asset/Images/iphone16.png" alt="iPhone 16 Pro" class="iphone">
+            </div>
+        </section>
+
+        <!-- Second Section -->
+        <section class="second-section">
+            <div 
+            class="second-phone">
+            <p class="sent">Looking for the latest Iphones and top-quality accessories? We have got you covered!</p>
+                <h1 class="title2">iPhone 14 Pro</h1>
+                <div class="buttons">
+                    <a href="#" class="btn learn">Learn more</a>
+                    <button class="buy-btn" data-name="Iphone 14 Pro" data-price="12500">Buy</button>
+                    
+                </div>
+                <img src="../../Asset/Images/Free_iPhone_14_Pro.png" alt="iPhone 15" class="iphone-14">
+            </div>
+        </section>
+
+        <!-- Third Section Phones Layout-->
+        <section class="Third-Section">
+            <h2 class="third-head">Explore Our Collection</h2>
+            <div class="phones-container">
+               
+                <div class="phones">
+                    <img src="../../Asset/Images/Free_iPhone_14_Pro.png" alt="phone">
+                    <h3>Iphone 14 Pro</h3>
+                    <p>GH₵ 10,200</p>
+                    <button class="buy-btn" data-name="Iphone 14 Pro" data-price="10200">Buy</button>
+                </div>
+                
+
+                <div class="phones">
+                    <img src="../../Asset\Images\iphonexr.png" alt="Iphone XR">
+                    <h3>Iphone XR</h3>
+                    <p>GH₵ 3,000</p>
+                    <button class="buy-btn" data-name="Iphone XR" data-price="3000">Buy</button>
+                </div>
+                
+
+                <div class="phones">
+                    <img src="..\..\Asset\Images\iphone162.png" alt="phone">
+                    <h3>iphone 16</h3>
+                    <p>GH₵ 20,000</p>
+                    <button class="buy-btn" data-name="Iphone 16" data-price="20000">Buy</button>
+                </div>
+                
+           
+                <div class="phones">
+                    <img src="..\..\Asset\Images\iphone11.png" alt="phone">
+                    <h3>Iphone 11</h3>
+                    <p>GH₵ 3,900</p>
+                    <button class="buy-btn" data-name="Iphone 11" data-price="3900">Buy</button>
+                </div>
+            </div>    
+            <div class="phones-container">
+                <div class="phones">
+                    <img src="..\..\Asset\Images\iphone 12.png" alt="Iphone 12">
+                    <h3>Iphone 12</h3>
+                    <p>GH₵ 4,500</p>
+                    <button class="buy-btn" data-name="Iphone 12" data-price="45000">Buy</button>
+                </div>
+                
+
+                <div class="phones">
+                    <div class="Lphone"><img src="..\..\Asset\Images\iphone15promax.webp" alt="phone"></div>
+                    <h3>Iphone 15 Pro Max</h3>
+                    <p>GH₵ 17,900</p>
+                    <button class="buy-btn" data-name="Iphone 15 Pro" data-price="17900">Buy</button>
+                </div>
+                
+                
+                   
+                <div class="phones">
+                    <img src="../../Asset\Images\iPhone_14_pro.png" alt="Iphone 14 Pro">
+                    <h3>Iphone 14 Pro</h3>
+                    <p>GH₵ 12,500</p>
+                    <button class="buy-btn" data-name="Iphone 12" data-price="45000">Buy</button>
+                </div>
+ 
+            </div>
+           
+        </section>
+
+            <!-- Fourth Section-Images Slider -->
+
+        <section class="Fourth-Section">
+            <div class="container">
+                <div class="image-slider">
+                    <img src="..\..\Asset\Images\cases.png" alt="Image 1">
+                    <img src="..\..\Asset\Images\airpods1.png" alt="Image 2">
+                    <img src="..\..\Asset\Images\Airpod2.png" alt="Image 3">
+                    <img src="..\..\Asset\Images\allaccess.png" alt="Image 4">
+                    <img src="..\..\Asset\Images\iPhone_14_pro.png" alt="Image 5">
+                </div>
+            </div>
+        </section>
+           
+
+
+         <!-- Cart Section -->
+        <section id="cart-section">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: GH₵ <span id="cart-total">0</span></p>
+            <button id="checkout-btn">Checkout</button>
+            <button id="clear-cart-btn">Clear Cart</button>
+        </section>
+    </main>
+
+    <script src="../../Asset/js/cart.js"></script>
+    </main>
+</body>
+</html>
