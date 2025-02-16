@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Store</title>
+    <title>CyberBoost iStore</title>
     <link rel="stylesheet" href="../../Asset/css/index.css">
 </head>
 <body>
@@ -11,15 +11,16 @@
     <header>
         <div class="main-header">
             <div class="logo">
-                <a href="index.html"><img src="../../Asset\Images\pngwing.com (3).png" alt="Apple Logo"></a>
+                <a href="index.html"><img src="../../Asset\Images\my_logo_2-removebg-preview.png" alt="Apple Logo"></a>
             </div>
 
             <!-- Navigation -->
             <nav class="main-nav">
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Store</a></li>
-                    <li><a href="#">Accessories</a></li>
+                <ul class="nav-links">                    
+                    <li><a href="#hero-section">Home</a></li>
+                    <li><a href="#second-section">Store</a></li>
+                    <li><a href="#five-Section">Accessories</a></li>
+                    <li><a href="#About-section">About</a></li>
                     <li><a href="#" id="cart-btn">Cart<span id="cart-count"></span></a></li>
                     <li><a href="Login.html">Login</a></li>
                 </ul>
@@ -28,8 +29,9 @@
     </header>
 
     <main>
+
         <!-- First Section -->
-        <section class="hero-section">
+        <section class="hero-section" id="hero-section">
 
             <div class="hero">
                 <h1 class="title">iPhone 16 Pro</h1>
@@ -42,11 +44,48 @@
             </div>
         </section>
 
+        <!-- into-section -->
+
+        <section class="intro">
+            <div class="leftintro"><h2>
+                    Welcome to Your Ultimate CyberBoost iStore Stay Connected, Stay Ahead!
+                </h2>
+
+                <p>
+                    At CyberBoost iStore, we bring you the best iphones and high-quality accessories to keep you powered, 
+                    connected, and protected. Whether you're upgrading your iphone, 
+                    looking for premium accessories, or need reliable gadgets, 
+                    we have got everything you need!
+                </p>
+            </div> 
+                
+            <div class="rightintro">
+                <p>
+                    Upgrade to the latest iPhone models with powerful features:
+                    High-speed performance & seamless multitasking,
+                    Stunning displays for an immersive experience,
+                    Long-lasting battery life & fast charging,
+                    Advanced camera technology for picture-perfect moments
+                </p>
+                <p><span style="color: #007aff; ">Why shop with us?</span>
+                    <ol>
+                        <div class="lists"><li  class="introlist">Quality-tested products from trusted brands</li>
+                        <li  class="introlist">Best prices with amazing deals & discounts</li>
+                        <li  class="introlist"> Fast and secure shipping</li>
+                        <li  class="introlist"> Excellent customer support</li></div>
+                    </ol>
+                </p>
+            </div>
+
+
+        </section>
+
         <!-- Second Section -->
-        <section class="second-section">
+        <section class="second-section" id="second-section">
             <div 
             class="second-phone">
-            <p class="sent">Looking for the latest Iphones and top-quality accessories? We have got you covered!</p>
+            <p class="sent">Looking for the latest iphones and top-quality accessories? We have got you covered!</p>
+            
                 <h1 class="title2">iPhone 14 Pro</h1>
                 <div class="buttons">
                     <a href="#" class="btn learn">Learn more</a>
@@ -58,8 +97,8 @@
         </section>
 
         <!-- Third Section Phones Layout-->
-        <section class="Third-Section">
-            <h2 class="third-head">Explore Our Collection</h2>
+        <section class="Third-Section" id="Third-Section">
+            <p class="third-head"> Browse our collection & find your perfect device today!</p>
             <div class="phones-container">
                
                 <div class="phones">
@@ -124,7 +163,7 @@
 
             <!-- Fourth Section-Images Slider -->
 
-        <section class="Fourth-Section">
+        <section class="Fourth-Section" id="Fourth-Section">
             <div class="container">
                 <div class="image-slider">
                     <img src="..\..\Asset\Images\cases.png" alt="Image 1">
@@ -135,8 +174,94 @@
                 </div>
             </div>
         </section>
-           
 
+
+        <section class="five-Section" id="five-Section">
+            <h2>Must Have Accessories for Your Device! Quality-tested & Affordable</h2>
+            <div class="phones-container">
+               
+                <div class="phones">
+                    <img src="../../Asset/Images/Airpod2.png" alt="Airpod">
+                    <h3>Airpod Pro 3</h3>
+                    <p>GH₵ 120</p>
+                    <button class="buy-btn" data-name="Airpod Pro 3" data-price="120">Buy</button>
+                </div>
+                
+
+                <div class="phones">
+                    <img src="../../Asset/Images/airpods1.png" alt="Airpod">
+                    <h3>Airpod Pro 2</h3>
+                    <p>GH₵ 100</p>
+                    <button class="buy-btn" data-name="Airpod Pro 2" data-price="100">Buy</button>
+                </div>
+                
+
+                <div class="phones">
+                    <img src="..\..\Asset\Images\case2.png" alt="phone">
+                    <h3>iphone 14 case</h3>
+                    <p>GH₵ 30</p>
+                    <button class="buy-btn" data-name="Iphone 14 case" data-price="30">Buy</button>
+                </div>
+                
+           
+                <div class="phones">
+                    <img src="..\..\Asset\Images\case3.png" alt="phone">
+                    <h3>Iphone 14 Pro case</h3>
+                    <p>GH₵ 40</p>
+                    <button class="buy-btn" data-name="Iphone 14 Pro case" data-price="40">Buy</button>
+                </div>
+            </div>    
+            <div class="phones-container">
+                <div class="phones">
+                    <img src="..\..\Asset\Images\series watch6.png" alt="Serie watch 4">
+                    <h3>Serie watch 4</h3>
+                    <p>GH₵ 2,00</p>
+                    <button class="buy-btn" data-name="Serie watch 4" data-price="2000">Buy</button>
+                </div>
+                
+                <div class="phones">
+                    <img src="../../Asset\Images\Series watch1.png" alt="Serie watch 3">
+                    <h3>Serie watch 3</h3>
+                    <p>GH₵ 1,800</p>
+                    <button class="buy-btn" data-name="Serie watch 3" data-price="1800">Buy</button>
+                </div>
+                   
+                <div class="phones">
+                    <img src="../../Asset\Images\series watch2.png" alt="Serie watch 2">
+                    <h3>Serie watch 2</h3>
+                    <p>GH₵ 1,500</p>
+                    <button class="buy-btn" data-name="Serie watch 2" data-price="1500">Buy</button>
+                </div>
+ 
+            </div>
+           
+        </section>
+
+        <!-- about-section -->
+
+        <section id="About-section">
+            <div>
+                <div class="leftintro">
+                    <h2>About Us - Who We Are</h2>
+                    <p>Welcome to CyberBoost iStore, your trusted destination for the latest iphones, accessories, and tech essentials! Our mission is simple to provide top-quality Applle devices and accessories at unbeatable prices while delivering an exceptional shopping experience.</p>
+                </div>
+
+                <div class="rightintro">
+                    <p><span class="about-withus" style="color: #007aff;">Why shop with us?</span>
+                        <ol>
+                            <div class="lists"><li  class="introlist">Quality-tested products from trusted brands</li>
+                            <li  class="introlist">Best prices with amazing deals & discounts</li>
+                            <li  class="introlist"> Fast and secure shipping</li>
+                            <li  class="introlist"> Excellent customer support</li></div>
+                        </ol>
+                        <p>
+                            At CyberBoost iStore, we    believe that technology should be accessible, reliable, and stylish. That's why we carefully select our products to meet your needs and lifestyle.
+                        </p>
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
 
          <!-- Cart Section -->
         <section id="cart-section">
@@ -147,6 +272,14 @@
             <button id="clear-cart-btn">Clear Cart</button>
         </section>
     </main>
+
+    <footer class="footer-end">
+        
+        <p>&copy; <span id="current-year"></span> CyberBoost. All Rights Reserved.</p>
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+        
+    </footer>
 
     <script src="../../Asset/js/cart.js"></script>
     </main>
