@@ -5,9 +5,11 @@
     
 }
 body{
-    background-image: url("../../Asset/Images/avator.jpg");
+    display: flex;
+    flex-direction: column;
+    /* background-image: url("../../Asset/Images/avator.jpg");
     background-size: cover;  
-    background-position: center;
+    background-position: center; */
     background-repeat: no-repeat; 
     padding: 30px ;  
     color: white; 
@@ -38,7 +40,7 @@ body{
     background-color: rgb(19, 19, 19) ;
     background-attachment: local;
     justify-content: space-between;
-
+    z-index: 1000; /* Ensure the navigation bar is on top */
 }
 .main-nav{
     display: flex;
@@ -46,8 +48,8 @@ body{
 }
 .nav-links{
     display: flex;
-    gap: 40px;
-    margin-left: 65%;
+    gap: 50px;
+    margin-left: 52%;
 
 }
 .nav-links li{
@@ -83,6 +85,17 @@ body{
  .nav-links li a:active{
     text-decoration: none;
     color:rgb(9, 25, 125);
+}
+.fa-bars {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 90%;
+}
+.fa-cart-plus, .fa-user-circle{
+    margin-left: -45px;
+    margin-top: 4px;
 }
 
 /*First-section */
@@ -164,10 +177,12 @@ body{
     color: rgba(255, 255, 255, 0.1);
     text-transform: uppercase;
     margin-left: 35%;
-    transform: translateX(-50%);
+    transform: translate(-50%);
     margin-top: 5%;
     filter: blur(4px);
     text-shadow: 0px 0px 30px rgba(255, 165, 0, 0.8);
+    position: relative; /* Ensure it scrolls below the nav */
+    z-index: 1; /* Lower than the nav bar */
 }
 
 /* iPhone Image */
@@ -179,6 +194,8 @@ body{
     margin-left: 50%;
     transform: translate(-50%);
     width: 390px; 
+    position: relative; /* Ensure it scrolls below the nav */
+    z-index: 1; /* Lower than the nav bar */
 }
 
 /* into-section */
@@ -193,6 +210,7 @@ body{
 }
 
 .leftintro, .rightintro{
+    text-align: left;
     color: black;
     padding: 20px;
     background-color: white;
@@ -214,7 +232,7 @@ body{
 .leftintro, .rightintro p{
     font-size: 28px;
     padding: 20px;
-    text-align: center;
+    text-align: left;
 
 }
   
@@ -425,9 +443,9 @@ body{
 /* footer */
 .footer-end{
 
-    background-color: white ;
-    font-size: 10px;
-    color: #000;
+    background-color: rgb(19, 19, 19);
+    font-size: 18px;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -440,6 +458,110 @@ body{
   }
   .footer-end p{ 
    padding: 5px; 
-   color: #000;  
+   color: white;  
   }
     
+/* General Responsive Styles */ 
+@media (max-width: 768px) {
+
+    .nav-links {
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 0;
+        padding: 2%;
+        z-index: 1000;
+    }
+    .fa-cart-plus{
+        position: absolute;
+        bottom: 27%;
+        margin-left: 24%;
+    }
+
+    .fa-user-circle{
+        position: absolute;
+        bottom: 8%;
+        margin-left: 35%;
+    }
+    .hero-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .iphone{
+        padding: 60px;
+        margin-top: -190px;
+        
+    }
+    .glow-text {
+        font-size: 8rem;
+        margin-left: 43%;
+    }
+    .intro {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .phones-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .image-slider {
+        gap: 100px;
+    }
+    .iphone-14{
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+        
+    }
+    #cart-section {
+        border-radius: 5px;
+        position: fixed;
+        right: 40%;
+        top: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title, .title2, .third-head, .five-Section h2 {
+        font-size: 2rem;
+    }
+    .sent {
+        font-size: 30px;
+        padding: 20px;
+    }
+    .phones {
+        width: 100%;
+    }
+    .image-slider img {
+        width: 30%;
+        height: auto;
+    }
+}
+
+
+/* Responsive Styles navigator */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 50px;
+        right: 5px;
+        background-color: #333;
+        width: 35%;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .nav-links a{
+        padding: 5px;
+        padding-left: 10px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+}

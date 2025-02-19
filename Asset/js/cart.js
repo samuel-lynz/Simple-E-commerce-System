@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const clearCartBtn = document.getElementById("clear-cart-btn");
 
     // Show/Hide Cart
-    cartBtn.addEventListener("click", function () {
+    cartBtn.addEventListener("click", function (event) {
+        event.preventDefault();
         cartSection.style.display = cartSection.style.display === "block" ? "none" : "block";
     });
 
@@ -81,4 +82,11 @@ document.addEventListener("DOMContentLoaded", function () {
         cart = [];
         updateCart();
     });
+
+    // JavaScript to toggle the navigation menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        });
+
 });
